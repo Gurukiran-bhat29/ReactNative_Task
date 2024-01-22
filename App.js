@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import LandingPage from './src/LandingPage';
 
 const App = () => {
