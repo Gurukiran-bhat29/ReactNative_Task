@@ -1,12 +1,12 @@
 import React from "react";
 import { View, Text, StyleSheet } from 'react-native';
 import TumbNail from './TumbNailPage';
-import { getCurrentDate } from './utils/helperUtils';
 
 const HomePage = ({ refresh, showContent, info }) => {
+
   return (
     <View style={styles.Container}>
-      <Text style={styles.date}>{getCurrentDate()}</Text>
+      <Text style={styles.date}>MONDAY 21 NOVEMBER</Text>
       <View style={styles.subHeader}>
         <Text style={styles.subHeaderLabel}>Today</Text>
         <Text
