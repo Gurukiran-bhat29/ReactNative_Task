@@ -1,0 +1,2 @@
+export const generateTokenUrl = 'https://swsut62sse.execute-api.ap-south-1.amazonaws.com/prod/generateToken';
+export const getContentUrl = 'https://tzab40im77.execute-api.ap-south-1.amazonaws.com/prod/getContent';
