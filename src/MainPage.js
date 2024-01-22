@@ -3,10 +3,14 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image } from 'rea
 import TumbNail from "./TumbNailPage";
 import Footer from "./Footer";
 
-const MainPage = ({ showContent, info }) => {
+const MainPage = ({ refresh, showContent, info }) => {
   return (
     <ScrollView>
-      <TumbNail showContent={() => showContent()} info={info} />
+      <TumbNail
+        refresh={() => refresh()}
+        showContent={() => showContent()}
+        info={info}
+      />
       <View style={styles.detailsContainer}>
         {info.paragraphs.map((paragraph, index) => {
           return (
@@ -26,6 +30,7 @@ const MainPage = ({ showContent, info }) => {
         />
       </View>
       <Footer
+        refresh={() => refresh()}
         customLabelStyle={styles.customLabelStyle}
         customStyle={styles.customStyle}
         info={info}

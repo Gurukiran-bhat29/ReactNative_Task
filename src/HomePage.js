@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import React from "react";
+import { View, Text, StyleSheet } from 'react-native';
 import TumbNail from './TumbNailPage';
+import { getCurrentDate } from './utils/helperUtils';
 
 const HomePage = ({ refresh, showContent, info }) => {
   return (
     <View style={styles.Container}>
-      <Text>MONDAY 21 NOVEMBER</Text>
+      <Text style={styles.date}>{getCurrentDate()}</Text>
       <View style={styles.subHeader}>
         <Text style={styles.subHeaderLabel}>Today</Text>
         <Text
@@ -38,6 +39,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center'
+  },
+  date: {
+    fontSize: 13,
+    fontWeight: '500',
+    color: '#808080'
   },
   subHeaderLabel: {
     fontSize: 20,

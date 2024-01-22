@@ -54,6 +54,7 @@ const LandingPage = () => {
 
   return (
     <MainPage
+      refresh={() => getContent()}
       info={info}
       showContent={() => setFullContent(!fullContent)}
     />
