@@ -1,5 +1,5 @@
 const { fetchData } = require('../src/utils/api');
-import { ANIME_DATA } from './mocks/mockData';
+import { ANIME_DATA } from '../src/mocks/mockData';
 
 test('fetchData should return data from the API', async () => {
   // Mocking the fetch function
